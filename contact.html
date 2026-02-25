@@ -4,88 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TOIVO CONSULTANCY</title>
-<meta name="description" content="">
-<meta name="author" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="Exchange Education a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
-    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
-<!-- Favicons
-    ================================================== -->
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
-
-<!-- Bootstrap -->
-<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
-
-<!-- Stylesheet
-    ================================================== -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
-<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-<!-- Navigation
-    ==========================================-->
-<nav id="menu" class="navbar navbar-default navbar-fixed-top">
-<nav class="navbar navbar-expand-lg navbar-light my-custom-navbar">
-  <!-- Navbar content -->
-
-  <div class="container"> 
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">  
-<img src="img/logo.jpg"></div>
-
-<button type="button"  class="navbar-toggle" 
-data-toggle="collapse" data-target=".navbar-collapse" >
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-<div id="navbar" class="navbar-collapse collapse">
-   <ul class="nav navbar-nav navbar-right"> 
-<p><br><br><p><p> 
-     <li>  <a href="index.html" class="page-scroll">About</a></li>
-        <li><a href="index.html" class="page-scroll">Services</a></li>
-       <!-- <li><a href="index.html" class="page-scroll">Projects</a></li>-->
-        <li><a href="index.html" class="page-scroll">Testimonials</a></li>
-        <li><a href="index.html" class="page-scroll">Contact</a></li>
-      </ul></p></br></br></p></p>
- </nav>
-    </div>
-    <!-- /.navbar-collapse --> 
-  </div>
-</nav>
-
-<!-- Contact Section -->
-
-<div id="contact">
-  <div class="container">
-    <div class="col-md-8">
-      <div class="row">
-        <div class="section-title"><br><br>
-          <h2><br><br><br>Get In Touch</h2>
-          <br><p>Please fill out the form below to send us an email and we will get back to you as soon as possible.</p>
-        </div>
-
-<!-- ✅ PASTE HERE -->
 <style>
-
-/* FORM CONTAINER */
 .contact-form {
   background: #f4f8ff;
   padding: 35px;
@@ -93,7 +19,6 @@ data-toggle="collapse" data-target=".navbar-collapse" >
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
-/* LABELS */
 .form-group label {
   font-weight: 600;
   color: #1a2b49;
@@ -101,7 +26,6 @@ data-toggle="collapse" data-target=".navbar-collapse" >
   display: block;
 }
 
-/* INPUTS */
 .form-group input,
 .form-group select,
 .form-group textarea {
@@ -110,8 +34,8 @@ data-toggle="collapse" data-target=".navbar-collapse" >
   border: 1px solid #cfd8dc;
   border-radius: 6px;
   font-size: 14px;
-  transition: all 0.3s ease;
   background-color: #ffffff;
+  color: #000000;
 }
 
 .form-group input:focus,
@@ -127,7 +51,6 @@ data-toggle="collapse" data-target=".navbar-collapse" >
   min-height: 150px;
 }
 
-/* BUTTON */
 .form-group input[type="submit"] {
   background: linear-gradient(135deg,#007bff,#0056b3);
   color: white;
@@ -153,201 +76,163 @@ data-toggle="collapse" data-target=".navbar-collapse" >
   padding: 12px;
   border-radius: 6px;
   margin-bottom: 20px;
-}
-.form-group input,
-.form-group select,
-.form-group textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #cfd8dc;
-  border-radius: 6px;
-  font-size: 14px;
-  background-color: #ffffff;
-  color: #000000;   /* ✅ TEXT COLOR BLACK */
+  display: none;
 }
 
+.loading-spinner {
+  display: none;
+  margin-bottom: 10px;
+}
 </style>
+</head>
+
+<body>
+
+<div id="contact">
+  <div class="container">
+    <div class="col-md-8">
+      <div class="row">
+        <div class="section-title">
+          <h2>Get In Touch</h2>
+          <p>Please fill out the form below to send us an email and we will get back to you as soon as possible.</p>
+        </div>
 
 <div class="contact-form">
-    <div id="successMessage" class="success-message"></div>
-    
-    <form id="contactForm" method="POST">
-      <div class="form-group">
-        <label for="name">Full Name *</label>
-        <input type="text" id="name" name="name" required maxlength="100">
-        <span class="error-message" id="nameError"></span>
-      </div>
-      <div class="form-group">
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" maxlength="20">
-        <span class="error-message" id="phoneError"></span>
-      </div>
-      <div class="form-group">
-        <label for="email">Email Address *</label>
-        <input type="email" id="email" name="email" required maxlength="100">
-        <span class="error-message" id="emailError"></span>
-      </div>
+<div id="successMessage" class="success-message"></div>
 
-      <div class="form-group">
-        
-        <label for="service_type">Service Type *</label>
-        <select id="service_type" name="service_type" required>
-          <option value="">-- Select Service Type --</option>
-          <option value="Home Loan">Home Loan</option>
-          <option value="Commercial Loan">Commercial Loan</option>
-          <option value="Mortage Loan">Mortage Loan</option>
-          <option value="Topup Loan">Topup Loan</option>
-          <option value="Land Purchase Loan">Land Purchase Loan</option>
-          <option value="Business Loan">Business Loan</option>
-          <option value="Real Estate Advisory">Real Estate Advisory</option>
-          <option value="Property Management">Property Management</option>
-          <option value="Investment Planning">Investment Planning</option>
-          <option value="Other">Other</option>
+<form id="contactForm">
+  <div class="form-group">
+    <label>Full Name *</label>
+    <input type="text" id="name" required maxlength="100">
+    <span class="error-message" id="nameError"></span>
+  </div>
 
+  <div class="form-group">
+    <label>Phone Number</label>
+    <input type="tel" id="phone" maxlength="20">
+    <span class="error-message" id="phoneError"></span>
+  </div>
 
-        </select>
-        <span class="error-message" id="serviceTypeError"></span>
-      </div>
+  <div class="form-group">
+    <label>Email Address *</label>
+    <input type="email" id="email" required maxlength="100">
+    <span class="error-message" id="emailError"></span>
+  </div>
 
-      
+  <div class="form-group">
+    <label>Service Type *</label>
+    <select id="service_type" required>
+      <option value="">-- Select Service Type --</option>
+      <option>Home Loan</option>
+      <option>Commercial Loan</option>
+      <option>Mortage Loan</option>
+      <option>Topup Loan</option>
+      <option>Land Purchase Loan</option>
+      <option>Business Loan</option>
+      <option>Real Estate Advisory</option>
+      <option>Property Management</option>
+      <option>Investment Planning</option>
+      <option>Other</option>
+    </select>
+    <span class="error-message" id="serviceTypeError"></span>
+  </div>
 
-      
+  <div class="form-group">
+    <label>Message *</label>
+    <textarea id="message" required maxlength="5000"></textarea>
+    <span class="error-message" id="messageError"></span>
+  </div>
 
-      <div class="form-group">
-        <label for="message">Message *</label>
-        <textarea id="message" name="message" required maxlength="5000"></textarea>
-        <span class="error-message" id="messageError"></span>
-      </div>
+  <div class="loading-spinner" id="loadingSpinner">Sending your message...</div>
 
-      <div class="loading-spinner" id="loadingSpinner">Sending your message...</div>
+  <div class="form-group">
+    <input type="submit" id="submitBtn" value="Send Message">
+  </div>
+</form>
+</div>
 
-      <div class="form-group">
-        <input type="submit" id="submitBtn" value="Send Message">
-      </div>
-    </form>
+</div>
+</div>
+</div>
 </div>
 
 <script>
 document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();
-    
-  // Clear previous errors and messages
+
   document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
   document.getElementById('successMessage').style.display = 'none';
-  document.getElementById('loadingSpinner').style.display = 'none';
-    
-  // Get form values
+
   const name = document.getElementById('name').value.trim();
   const email = document.getElementById('email').value.trim();
   const serviceType = document.getElementById('service_type').value.trim();
   const phone = document.getElementById('phone').value.trim();
   const message = document.getElementById('message').value.trim();
-    
-  // Validation
+
   let isValid = true;
-    
+
   if (name.length < 2) {
     document.getElementById('nameError').textContent = 'Name must be at least 2 characters';
     isValid = false;
   }
-    
+
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
     document.getElementById('emailError').textContent = 'Please enter a valid email address';
     isValid = false;
   }
-    
+
   if (!serviceType) {
     document.getElementById('serviceTypeError').textContent = 'Please select a service type';
     isValid = false;
   }
-    
+
   if (phone && !/^[\d\s+\-().]+$/.test(phone)) {
     document.getElementById('phoneError').textContent = 'Please enter a valid phone number';
     isValid = false;
   }
- 
-    
+
   if (message.length < 10) {
     document.getElementById('messageError').textContent = 'Message must be at least 10 characters';
     isValid = false;
   }
-    
-  if (isValid) {
-    // Show loading spinner
-    document.getElementById('loadingSpinner').style.display = 'block';
-    document.getElementById('submitBtn').disabled = true;
-        
-    // Prepare form data
-    const formData = new FormData();
-    formData.append('name', name);
-    formData.append('email', email);
-    formData.append('service_type', serviceType);
-    formData.append('phone', phone);
-  
-    formData.append('message', message);
-        
-    // Send via AJAX
-    fetch('contact-handler.php', {
-      method: 'POST',
-      body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById('loadingSpinner').style.display = 'none';
-      document.getElementById('submitBtn').disabled = false;
-            
-      if (data.success) {
-        document.getElementById('successMessage').textContent = data.message;
-        document.getElementById('successMessage').style.display = 'block';
-        // Reset form
-        document.getElementById('contactForm').reset();
-        // Clear success message after 5 seconds
-        setTimeout(() => {
-          document.getElementById('successMessage').style.display = 'none';
-        }, 5000);
-      } else {
-        alert('Error: ' + data.message);
-      }
-    })
-    .catch(error => {
-      document.getElementById('loadingSpinner').style.display = 'none';
-      document.getElementById('submitBtn').disabled = false;
-      console.error('Error:', error);
-      alert('An error occurred. Please try again later.');
-    });
-  }
+
+  if (!isValid) return;
+
+  document.getElementById('loadingSpinner').style.display = 'block';
+  document.getElementById('submitBtn').disabled = true;
+
+  const formData = new FormData();
+  formData.append('name', name);
+  formData.append('email', email);
+  formData.append('service_type', serviceType);
+  formData.append('phone', phone);
+  formData.append('message', message);
+
+  fetch('https://formspree.io/f/mwvnadvk', {
+    method: 'POST',
+    headers: { 'Accept': 'application/json' },
+    body: formData
+  })
+  .then(response => {
+    document.getElementById('loadingSpinner').style.display = 'none';
+    document.getElementById('submitBtn').disabled = false;
+
+    if (response.ok) {
+      document.getElementById('successMessage').textContent = "Message sent successfully!";
+      document.getElementById('successMessage').style.display = 'block';
+      document.getElementById('contactForm').reset();
+    } else {
+      alert("Something went wrong. Please try again.");
+    }
+  })
+  .catch(() => {
+    document.getElementById('loadingSpinner').style.display = 'none';
+    document.getElementById('submitBtn').disabled = false;
+    alert("Error sending message.");
+  });
 });
 </script>
 
-
-
-
-
-
-
-
-
-</head>   <body>
-     </div>
-    </div>
-
- 
-  </div>
-</div>
-<!-- Footer Section -->
-<div id="footer">
-  <div class="container text-center">
-
-  </div>
-</div>
-<!-- <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
-<script type="text/javascript" src="js/bootstrap.js"></script> 
-<script type="text/javascript" src="js/SmoothScroll.js"></script> 
-<script type="text/javascript" src="js/nivo-lightbox.js"></script> 
-<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
-<script type="text/javascript" src="js/contact_me.js"></script>
-<script type="text/javascript" src="js/submit-form.php"></script>
-<script type="text/javascript" src="js/main.js"></script> -->
 </body>
 </html>
