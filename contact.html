@@ -1,238 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TOIVO CONSULTANCY</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="VaultEdge - Premium financial planning and investment management HTML template">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <title>Toivo Consultancy</title>
 
-<style>
-.contact-form {
-  background: #f4f8ff;
-  padding: 35px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-}
-
-.form-group label {
-  font-weight: 600;
-  color: #1a2b49;
-  margin-bottom: 8px;
-  display: block;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #cfd8dc;
-  border-radius: 6px;
-  font-size: 14px;
-  background-color: #ffffff;
-  color: #000000;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-  border-color: #007bff;
-  outline: none;
-  box-shadow: 0 0 6px rgba(0,123,255,0.3);
-}
-
-.form-group textarea {
-  resize: vertical;
-  min-height: 150px;
-}
-
-.form-group input[type="submit"] {
-  background: linear-gradient(135deg,#007bff,#0056b3);
-  color: white;
-  padding: 12px 30px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.form-group input[type="submit"]:hover {
-  background: linear-gradient(135deg,#0056b3,#003f88);
-}
-
-.error-message {
-  color: #e53935;
-}
-
-.success-message {
-  color: #2e7d32;
-  background: #e8f5e9;
-  padding: 12px;
-  border-radius: 6px;
-  margin-bottom: 20px;
-  display: none;
-}
-
-.loading-spinner {
-  display: none;
-  margin-bottom: 10px;
-}
-</style>
+     <link rel="icon" href="img\logo\TOIVO LOGO PNG.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/custom-override.css">
 </head>
 
 <body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+    </div>
 
-<div id="contact">
-  <div class="container">
-    <div class="col-md-8">
-      <div class="row">
-        <div class="section-title">
-          <h2>Get In Touch</h2>
-          <p>Please fill out the form below to send us an email and we will get back to you as soon as possible.</p>
+    <!-- ===== NAVBAR (single dark bar, logo left, nav center, CTA right) ===== -->
+    <header class="ve-header" id="ve-sticky">
+        <div class="container-fluid ve-nav-wrap">
+            <!-- Logo -->
+            <div class="ve-logo">
+                <a href="index.html">
+                    <img src="img/logo/TOIVO LOGO PNG.png" alt="TOIVO Logo" class="ve-logo-img" />
+                </a>
+            </div>
+
+            <!-- Nav Links -->
+            <nav class="ve-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    
+                    
+                    <li class="has-drop">
+                        <a href="services.html">Services </a>
+                        <!-- <ul class="ve-dropdown">
+                            <li><a href="#">Wealth Management</a></li>
+                            <li><a href="#">Retirement Plans</a></li>
+                            <li><a href="#">Tax Advisory</a></li>
+                            <li><a href="#">Risk Analysis</a></li>
+                        </ul> -->
+                    </li>
+                    
+                    <li><a href="post.html">Testimonials</a></li>
+
+                    <li class="has-drop">
+                        <a href="about.html">About </a>
+                                        </li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- CTA
+            <div class="ve-nav-cta">
+                <a href="contact.html" class="ve-cta-btn">Get Started <i class="fa fa-arrow-right"></i></a>
+            </div> -->
+
+            <!-- Mobile Toggle -->
+            <button class="ve-toggler" id="ve-toggle">
+                <span></span><span></span><span></span>
+            </button>
         </div>
 
-<div class="contact-form">
-<div id="successMessage" class="success-message"></div>
+        <!-- Mobile Menu -->
+        <div class="ve-mobile-menu" id="ve-mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                                <li><a href="post.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="ve-page-hero" style="background-image:url(img/bg-img/22.jpg);">
+        <div class="ve-page-hero-overlay"></div>
+        <div class="container ve-page-hero-content">
+            <span class="ve-section-tag">Get In Touch</span>
+            <h1>We'd Love to <span>Hear From You</span></h1>
+            <nav aria-label="breadcrumb"><ol class="ve-breadcrumb"><li><a href="index.html">Home</a></li><li class="active">Contact</li></ol></nav>
+        </div>
+    </section>
 
-<form id="contactForm">
-  <div class="form-group">
-    <label>Full Name *</label>
-    <input type="text" id="name" required maxlength="100">
-    <span class="error-message" id="nameError"></span>
-  </div>
+    <section class="ve-contact-cards-section">
+        <div class="container">
+            <div class="ve-contact-cards-grid">
+                <div class="ve-contact-info-card wow fadeInUp" data-wow-delay="100ms">
+                    <div class="ve-ci-icon"><i class="fa fa-map-marker"></i>
+                    </div>
+                    <h5>Visit Our Office</h5><p>Toivo Consultancy 
+                        <br>No.71, G.K, M College Road, VSJ Nagar, Mappedu,Selaiyur, Chennai,<br>
+                         TamilNadu-600126</i> 
+        </p></div>
+                <div class="ve-contact-info-card wow fadeInUp" data-wow-delay="250ms">
+                    <div class="ve-ci-icon"><i class="fa fa-phone"></i>
+                    </div>
+                    <h5>Call Us</h5><p>B.Darwin <br>
+                        +91 9551051094<br></p>
+                </div>
+                <div class="ve-contact-info-card wow fadeInUp" data-wow-delay="400ms">
+                    <div class="ve-ci-icon"><i class="fa fa-envelope"></i></div>
+                    <h5>Email Us</h5><p>toivoconsultancy@gmail.com</p></div>
+            </div>
+        </div>
+    </section>
 
-  <div class="form-group">
-    <label>Phone Number</label>
-    <input type="tel" id="phone" maxlength="20">
-    <span class="error-message" id="phoneError"></span>
-  </div>
+    <section class="ve-section ve-contact-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-7 wow fadeInLeft" data-wow-delay="100ms">
+                <div class="ve-contact-form-wrap">
+                    <span class="ve-section-tag">Send a Message</span>
+                    <h2>Let’s Discuss
+                             <span> Your Requirements</span></h2>
 
-  <div class="form-group">
-    <label>Email Address *</label>
-    <input type="email" id="email" required maxlength="100">
-    <span class="error-message" id="emailError"></span>
-  </div>
+                    <form id="contactForm" class="ve-contact-form" onsubmit="return false;">
+                        <div id="successMessage" class="success-message" style="display:none;"></div>
 
-  <div class="form-group">
-    <label>Service Type *</label>
-    <select id="service_type" required>
-      <option value="">-- Select Service Type --</option>
-      <option>Home Loan</option>
-      <option>Commercial Loan</option>
-      <option>Mortage Loan</option>
-      <option>Topup Loan</option>
-      <option>Land Purchase Loan</option>
-      <option>Business Loan</option>
-      <option>Real Estate Advisory</option>
-      <option>Property Management</option>
-      <option>Investment Planning</option>
-      <option>Other</option>
-    </select>
-    <span class="error-message" id="serviceTypeError"></span>
-  </div>
+                        <div class="ve-form-row">
+                            <div class="ve-form-group">
+                                <label for="first_name">First Name *</label>
+                                <input id="first_name" name="first_name" type="text" placeholder="Your first name" required>
+                                <span class="error-message" id="firstNameError"></span>
+                            </div>
 
-  <div class="form-group">
-    <label>Message *</label>
-    <textarea id="message" required maxlength="5000"></textarea>
-    <span class="error-message" id="messageError"></span>
-  </div>
+                            <div class="ve-form-group">
+                                <label for="last_name">Last Name</label>
+                                <input id="last_name" name="last_name" type="text" placeholder="Your last name">
+                                <span class="error-message" id="lastNameError"></span>
+                            </div>
+                        </div>
 
-  <div class="loading-spinner" id="loadingSpinner">Sending your message...</div>
+                        <div class="ve-form-row">
+                            <div class="ve-form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input id="phone" name="phone" type="tel" placeholder="+91 95510xxxx" required>
+                                <span class="error-message" id="phoneError"></span>
+                            </div>
 
-  <div class="form-group">
-    <input type="submit" id="submitBtn" value="Send Message">
-  </div>
-</form>
-</div>
+                            <div class="ve-form-group">
+                                <label for="email">Email Address *</label>
+                                <input id="email" name="email" type="email" placeholder="your@example.com" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                        </div>
 
-</div>
-</div>
-</div>
-</div>
+                        <div class="ve-form-row">
+                            <div class="ve-form-group">
+                                <label for="service_type">Service Interested In *</label>
+                                <select id="service_type" name="service_type" required>
+                                    <option value="">-- Select a Service --</option>
+                                    <option value="loan">Loan Services</option>
+                                    <!-- <option value="property">Property Services</option> -->
+                                    <option value="both">Property Assistance</option>
+                                </select>
+                                <span class="error-message" id="serviceTypeError"></span>
+                            </div>
 
+                            <div class="ve-form-group">
+                                <label for="loan_type">Specific Service</label>
+                                <select id="loan_type" name="loan_type">
+                                    <option value="">-- Select Service --</option>
+                                    <option value="home">Home Loan</option>
+                                    <option value="commercial">Commercial Loan</option>
+                                    <option value="mortgage">Mortgage Loan</option>
+                                    <option value="topup">Top-up Loan</option>
+                                    <option value="land">Land Purchase</option>
+                                    <option value="business">Business Loan</option>
+                                    <option value="personal">Personal Loan</option>
+                                    <option value="vehicle">Vehicle Loan</option>
+                                    <option value="advisory">Real Estate Advisory</option>
+                                    <option value="management">Property Management</option>
+                                    
+                                </select>
+                                <span class="error-message" id="loanTypeError"></span>
+                            </div>
+                        </div>
+
+                        <div class="ve-form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your requirement..." required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+
+                        <div id="loadingSpinner" class="loading-spinner" style="display:none;">Sending...</div>
+
+                        <div class="ve-form-group">
+                            <button id="submitBtn" type="button" class="ve-btn-primary">Send Message <i class="fa fa-paper-plane"></i></button>
+                        </div>
+                    </form>
 <script>
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-  e.preventDefault();
+(function(){
+  const form = document.getElementById('contactForm');
+  const submitBtn = document.getElementById('submitBtn');
+  const successEl = document.getElementById('successMessage');
+  const loadingSpinner = document.getElementById('loadingSpinner');
 
-  document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
-  document.getElementById('successMessage').style.display = 'none';
+  const serviceSelect = document.getElementById('service_type');
+  const loanSelect = document.getElementById('loan_type');
 
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const serviceType = document.getElementById('service_type').value.trim();
-  const phone = document.getElementById('phone').value.trim();
-  const message = document.getElementById('message').value.trim();
+  // option sets
+  const OPTIONS = {
+    default: [
+      {v:'', t:'-- Select Service --'},
+     
+    ],
+    loan: [
+      {v:'', t:'-- Select Loan --'},
+      {v:'home', t:'Home Loan'},
+      {v:'commercial', t:'Commercial Loan'},
+      {v:'mortgage', t:'Mortgage Loan'},
+      {v:'topup', t:'Top-up Loan'},
+      {v:'business', t:'Business Loan'},
+      {v:'personal', t:'Personal Loan'},
+      {v:'vehicle', t:'Vehicle Loan'}
+    ],
+    both: [
+      {v:'', t:'-- Select Service --'},    
+      {v:'plots', t:'Plots'},
+      {v:'flats', t:'Flats'},
+      {v:'villas', t:'Villas'}
 
-  let isValid = true;
+    ]
+  };
 
-  if (name.length < 2) {
-    document.getElementById('nameError').textContent = 'Name must be at least 2 characters';
-    isValid = false;
+  function populateOptions(key){
+    const list = OPTIONS[key] || OPTIONS.default;
+    loanSelect.innerHTML = '';
+    list.forEach(opt => {
+      const o = document.createElement('option');
+      o.value = opt.v;
+      o.textContent = opt.t;
+      loanSelect.appendChild(o);
+    });
   }
 
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(email)) {
-    document.getElementById('emailError').textContent = 'Please enter a valid email address';
-    isValid = false;
-  }
+  // initialize based on current selection
+  populateOptions(serviceSelect.value === 'loan' ? 'loan' : (serviceSelect.value === 'both' ? 'both' : 'default'));
 
-  if (!serviceType) {
-    document.getElementById('serviceTypeError').textContent = 'Please select a service type';
-    isValid = false;
-  }
+  serviceSelect.addEventListener('change', () => {
+    const val = serviceSelect.value;
+    if (val === 'loan') populateOptions('loan');
+    else if (val === 'both') populateOptions('both');
+    else populateOptions('default');
 
-  if (phone && !/^[\d\s+\-().]+$/.test(phone)) {
-    document.getElementById('phoneError').textContent = 'Please enter a valid phone number';
-    isValid = false;
-  }
-
-  if (message.length < 10) {
-    document.getElementById('messageError').textContent = 'Message must be at least 10 characters';
-    isValid = false;
-  }
-
-  if (!isValid) return;
-
-  document.getElementById('loadingSpinner').style.display = 'block';
-  document.getElementById('submitBtn').disabled = true;
-
-  const formData = new FormData();
-  formData.append('name', name);
-  formData.append('email', email);
-  formData.append('service_type', serviceType);
-  formData.append('phone', phone);
-  formData.append('message', message);
-
-  fetch('https://formspree.io/f/mwvnadvk', {
-    method: 'POST',
-    headers: { 'Accept': 'application/json' },
-    body: formData
-  })
-  .then(response => {
-    document.getElementById('loadingSpinner').style.display = 'none';
-    document.getElementById('submitBtn').disabled = false;
-
-    if (response.ok) {
-      document.getElementById('successMessage').textContent = "Message sent successfully!";
-      document.getElementById('successMessage').style.display = 'block';
-      document.getElementById('contactForm').reset();
-    } else {
-      alert("Something went wrong. Please try again.");
-    }
-  })
-  .catch(() => {
-    document.getElementById('loadingSpinner').style.display = 'none';
-    document.getElementById('submitBtn').disabled = false;
-    alert("Error sending message.");
+    // clear related errors and selection
+    document.getElementById('loanTypeError').textContent = '';
   });
-});
+
+  // accessibility and success element
+  if (successEl) {
+    successEl.setAttribute('role','status');
+    successEl.setAttribute('aria-live','polite');
+  }
+
+  function clearErrors(){ document.querySelectorAll('.error-message').forEach(e=>e.textContent=''); }
+  function showSuccess(msg){
+    if (!successEl) return;
+    successEl.style.display='block';
+    successEl.style.background = '#e8f5e9';
+    successEl.style.color = '#2e7d32';
+    successEl.style.padding = '10px';
+    successEl.style.borderRadius = '6px';
+    successEl.textContent = msg;
+    successEl.scrollIntoView({behavior:'smooth', block:'center'});
+    setTimeout(()=> { successEl.style.display = 'none'; }, 8000);
+  }
+  function hideSuccess(){ if (successEl){ successEl.style.display='none'; successEl.textContent=''; } }
+
+  async function handleSubmit(){
+    clearErrors(); hideSuccess();
+
+    const data = {
+      first_name: document.getElementById('first_name').value.trim(),
+      last_name: document.getElementById('last_name').value.trim(),
+      phone: document.getElementById('phone').value.trim(),
+      email: document.getElementById('email').value.trim(),
+      service_type: serviceSelect.value,
+      loan_type: loanSelect.value,
+      message: document.getElementById('message').value.trim()
+    };
+
+    let valid = true;
+    if (data.first_name.length < 2){ document.getElementById('firstNameError').textContent='Enter at least 2 characters'; valid = false; }
+    const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRe.test(data.email)){ document.getElementById('emailError').textContent='Enter a valid email'; valid = false; }
+    if (!data.phone || !/^[\d\s+\-().]+$/.test(data.phone)){ document.getElementById('phoneError').textContent='Enter a valid phone'; valid = false; }
+    if (!data.service_type){ document.getElementById('serviceTypeError').textContent='Select a service'; valid = false; }
+
+    // require loan_type for loan selection; for property assistance require a property option (advisory/etc.)
+    if (data.service_type === 'loan' && !data.loan_type){ document.getElementById('loanTypeError').textContent='Select a loan type'; valid = false; }
+    if (data.service_type === 'both' && !data.loan_type){ document.getElementById('loanTypeError').textContent='Select a property/service option'; valid = false; }
+
+    if (data.message.length < 10){ document.getElementById('messageError').textContent='Message must be at least 10 characters'; valid = false; }
+    if (!valid) return;
+
+    submitBtn.disabled = true;
+    if (loadingSpinner) loadingSpinner.style.display = 'block';
+
+    try {
+      const formData = new FormData();
+      Object.keys(data).forEach(k => formData.append(k, data[k] || ''));
+
+      const resp = await fetch('https://formspree.io/f/mwvnadvk', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: formData
+      });
+
+      if (loadingSpinner) loadingSpinner.style.display = 'none';
+      submitBtn.disabled = false;
+
+      if (resp.ok) {
+        showSuccess('Message sent successfully!');
+        form.reset();
+        populateOptions('default');
+      } else {
+        const json = await resp.json().catch(()=>({}));
+        alert(json?.error || 'Something went wrong while sending the message.');
+      }
+    } catch (e) {
+      if (loadingSpinner) loadingSpinner.style.display = 'none';
+      submitBtn.disabled = false;
+      alert('Network error. Please try again later.');
+    }
+  }
+
+  submitBtn.addEventListener('click', handleSubmit);
+})();
 </script>
 
+
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-5 wow fadeInRight" data-wow-delay="200ms">
+                <div class="ve-contact-aside">
+                    <h5 class="ve-map-title"><i class="fa fa-map-marker"></i> Our Location</h5>
+                    <div class="ve-ca-hours">
+                        <p>View the shared location:</p>
+                        <a href="https://share.google/mLVn0uDmNdBq90Bor" target="_blank" rel="noopener noreferrer" class="ve-btn-white">Open Map Link</a>
+                    </div>
+
+                    <div class="ve-ca-social">
+                        <h5>Connect With Us</h5>
+                        <div class="ve-social">
+            <a href="https://share.google/mLVn0uDmNdBq90Bor"><i class="fa fa-google"></i></a>
+                      <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
+                    <a href="https://www.linkedin.com/in/darwin-b-45586558?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/toivoconsultancy?igsh=MWJsNmMxNTJmYTdrYQ=="><i class="fa fa-instagram"></i></a>
+               
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+   
+ <!-- ===== FOOTER ===== -->
+<footer class="ve-footer">
+    <div class="container">
+        <div class="row align-items-center text-center text-lg-left">
+
+            <!-- Get In Touch -->
+            <div class="col-md-6 mb-4">
+                <h5 class="ve-footer-title">Get In Touch</h5>   
+                <p>Please fill out the form below to send us an email and we will get back to you as soon as possible.</p>
+                <a href="enter.html" class="ve-btn-white">Enter Your Details</a>
+            </div>
+
+            <!-- Reach Us -->
+            <div class="col-md-3 mb-4">
+                <h5 class="ve-footer-title">Reach Us</h5>
+                <ul class="ve-footer-contact">
+                    <ul class="ve-footer-contact">
+    <li>
+        <i class="fa fa-map-marker"> </i>Toivo Consultancy <br>No.71, G.K, M College Road, VSJ Nagar, Mappedu, <br> Selaiyur, Chennai, Tamil Nadu 600126</i> 
+        
+    </li>
+                         <li><i class="fa fa-phone"></i> +91 9551051094</li>
+                    <li><i class="fa fa-envelope"></i> toivoconsultancy@gmail.com</li>
+       
+                          <!-- Map Link -->
+        <li>
+            <i class="fa fa-map"></i>
+            <a href="https://maps.app.goo.gl/kNxyrzSbyDqnYXEbA" target="_blank">
+                View on Google Maps
+            </a>
+        </li> 
+                     
+                </ul>
+            </div>
+
+            <!-- Social Icons (CENTERED) -->
+            <div class="col-md-3 mb-4 ve-footer-center">
+                <h5 class="ve-footer-title">Follow Us</h5>
+                <div class="ve-social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+           
+            </div>
+
+          
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="ve-footer-bottom">
+        <div class="container">
+            <div class="ve-footer-bottom-inner">
+                <p type="center">
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script>
+                    Toivo Consultancy. All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- STYLE INSIDE HTML -->
+<style>
+.ve-footer-center {
+    text-align: center;
+}
+
+/* Social container */
+.ve-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Icon style (NO white background) */
+.ve-social a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #ccc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Hover effects (premium colors) */
+.ve-social a:hover {
+    background: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+.ve-social a:nth-child(1):hover { background:#3b5998; } /* Facebook */
+<!-- .ve-social a:nth-child(2):hover { background:#1da1f2; } /* Twitter */ -->
+.ve-social a:nth-child(3):hover { background:#0077b5; } /* LinkedIn */
+<!-- .ve-social a:nth-child(4):hover { background:#e4405f; } /* Instagram */ -->
+.ve-social a:nth-child(4):hover {
+    background: radial-gradient(circle at 30% 107%,
+        #fdf497 0%, #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285AEB 90%);
+    color: #fff;
+    border: none;
+}
+.ve-footer-contact a {
+    color: #fff;
+    font-size: 12px;
+}
+</style>
+    <!-- Scripts -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/plugins/plugins.js"></script>
+    <script src="js/active.js"></script>
+    <script src="js/vaultedge.js"></script>
 </body>
 </html>
